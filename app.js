@@ -3,6 +3,8 @@ const express = require('express');
 const app = express();
 
 
+
+
 // Connexion MONGODB
 const mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://User:Grimoire@cluster0.ee21h6j.mongodb.net/?retryWrites=true&w=majority',
