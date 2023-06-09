@@ -4,6 +4,8 @@ const app = express();
 
 
 
+const userRoutes = require('./routes/user');
+
 
 // Connexion MONGODB
 const mongoose = require('mongoose');
@@ -41,5 +43,7 @@ app.use('/api/stuff', (req, res, next) => {
     ];
     res.status(200).json(stuff);
   });
+
+  app.use('/api/auth', userRoutes);
 
 module.exports = app;
